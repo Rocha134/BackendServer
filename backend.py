@@ -28,7 +28,7 @@ def create():
     id = str(uuid.uuid4())
     games[id] = Street()
 
-    response = jsonify("ok")
+    response = jsonify(id)
     response.status_code = 201
     response.headers['Location'] = f"/games/{id}"
     response.headers['Access-Control-Expose-Headers'] = '*'
