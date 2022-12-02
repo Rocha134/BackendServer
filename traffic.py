@@ -255,12 +255,3 @@ def car_draw(agent):
         return {"Shape": "rect", "w": 0.034, "h": 0.02, "Filled": "true", "Color": agent.color}
     elif type(agent) == Nodo:
         return {"Shape": "rect", "w": 0.01, "h": 0.01, "Filled": "true", "Color": "Black"}
-
-#definicion del canvas visual de la simulacion
-canvas = SimpleCanvas(car_draw, 500, 500)
-
-model_params = {}
-
-server = ModularServer(Street, [canvas], "Traffic", model_params)
-server.port = 8522
-server.launch()

@@ -10,7 +10,7 @@ import json, logging, os, atexit
 
 games = {}
 
-app = flask.Flask(__name__, static_url_path='')
+app = flask.Flask(__name__, static_url_path='') 
 
 # On IBM Cloud Cloud Foundry, get the port number from the environment variable PORT
 # When running this app on the local machine, default the port to 8000
