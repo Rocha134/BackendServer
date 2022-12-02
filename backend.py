@@ -1,3 +1,6 @@
+#Omar Jímenez
+#Alejandro Ubeto
+#Francisco Rocha
 import flask
 from flask_cors import CORS
 from flask.json import jsonify
